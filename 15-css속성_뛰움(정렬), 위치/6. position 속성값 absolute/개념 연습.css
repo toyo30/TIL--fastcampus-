@@ -1,0 +1,71 @@
+.grand-parent{
+  width: 400px;
+  height:300px;
+  padding: 30px 100px 100px 30px;
+  border: 4px dashed lightgray;
+}
+
+
+.parent{
+  width: 400px;
+  height:300px;
+  border: 4px dashed gray;
+}
+
+.child{
+  width: 120px;
+  height: 80px;
+  background:tomato;
+  border:4px dashed red;
+  border-radius:10px;
+  font-size:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.absolute{
+  position:absolute;
+  
+/*   position: absolute; 후에 아무것도 적지 않았을 때, 3번 박스가 보이지 않는데 그 이유는 2번 박스가 부모요소를
+ 기준으로 배치될 준비가 끝났기 때문이다. 이 준비를 끝낸 후에 배치한다.  
+ 
+   absolute에서 탑-바텀 값 혹은 레프트-라이트(?) 값을 지정해주지 않으면, 준비하고 있다. 
+   형제요소와 겹칠 수 있다. 
+  
+  
+  */
+  
+  bottom:50px;
+  right:-100px;
+  
+/*   
+   top:50px;
+  left:100px; 만 하면 브라우져 상의 부모요소를 기준으로 하기 때문에 잘못된 값이다.  
+  
+  그러니까 부모 요소의 위치상의 기준이 정해져야 작동한다.  */
+  
+}
+
+.parent{
+  position:relative;
+/*   부모 요소의 자기를 기준으로만 하면 된다. 
+  딱 부모 요소를 기준으로 50px 지점 100px 지점에 위치했다. 
+  부모요소가 position:xxx; 값이 지정되어 있는지를 확인해야 한다(static제외) 
+  
+  absolute 나 fixed나 sticky 의 경우 부모요소로  존재하지 않을 수도 있다. 
+  */
+  
+/*   position:xxx을 설정한 것이 부모요소가 된다. grand parent에 했다면 
+    grand parent가 부모요소가 된다. 
+  
+  부모요소가 변경될 수도 있다. 
+    
+    .grand parent{
+      poition:relative;
+  } */
+  
+/*   부모요소 모두에 position:xxx; 가 설정되지 않았다면, body -html 태그 뷰포트에 설정이 된다.  */
+  
+/*   포지션 값이 있는지 없는지를 기계적으로 확인해야 한다.  */
+}

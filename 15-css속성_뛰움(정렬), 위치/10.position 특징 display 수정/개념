@@ -1,0 +1,13 @@
+
+display 수정
+
+
+absolute ,fixed 속성 값이 적용된 요소는 display 속성의 값이 아주 일부분을 제외하고 block으로 수정됨
+
+
+static relative sticky는 아니다. 
+
+float또한 마찬가지 
+
+
+@@@@@@@@flex, inline-flex 의 경우 포지션 효과 없음. block으로 변하지 않음. 

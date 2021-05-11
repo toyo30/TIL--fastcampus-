@@ -1,0 +1,23 @@
+수평을 만들기 위해서. 요소를 뛰워서 수평정렬하기 위함. 
+
+float를 사용 
+
+
+display: flex;도 수평을 만들기 위해서 사용 
+
+
+float
+
+float: none; 기본값. 
+float: left;
+float: right; 
+
+
+
+
+탈출이 중요함. 뛰우는 만큼. 잘 계산해서 탈출하는 법이 중요함. 
+
+
+float 수평 정렬할 때, 잘 안 쓰임 flex의 등장으로 
+
+

@@ -1,0 +1,29 @@
+.clearfix:after{
+  content:'';
+  clear:both;
+  display:block;    /*or table*/
+}
+/* 줄바꿈을 해야 하니까/ block으로 만들어준다.  */
+/*특정한 부분에 clearfix를 적용하여 ㅏ
+이 부분 이후에는 float를 해제한다는 선언 */
+
+.child{
+  height:30px;
+  width:50px;
+  background:tomato;
+  border: 3px dashed gray;
+  margin: 5px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  float:left;
+}
+
+
+
+
+
+/* 부모요소에 overflow: (hidden, auto) 하여 적용하기 
+.clearfix{
+  overflow: hidden;
+} */

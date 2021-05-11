@@ -1,0 +1,31 @@
+.box {
+    width: 100px;
+    height:100px;
+    background:tomato;
+    border: 4px dashed red;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size:30px;
+  }
+  
+  .relative{
+    position: relative;
+  /*   처음 있었던 자기자신을 기준으로 삼는다.  */
+    
+    left: 50px;
+    bottom:40px;
+    
+  /*   top 이랑 bottom은 같이 쓰일 수 없구나. 
+    left랑 right도 같이 쓰일 수 없구나.  */
+    
+    
+  /*   3번 박스는 가만히 있는다. 보이는 2번 박스는 가짜고, 원래 있었던 위치가 고정되어 있는 상태다. 3번값에 영향을 주고 있는 상태. 
+    1번 값에 영향을 받고 있는 상태. 
+    주변의 형제 요소에 영향을 받는다.  
+     */
+    
+  /*   영향을 받기 때문에 주의해서 써야하고, 
+    absolute를 사용하는 편이 좋다. */
+  }
