@@ -1,0 +1,77 @@
+.parent{
+  height:3000px;
+}
+
+.box {
+  
+  width: 500px;
+  height:350px;
+  border: 2px dashed lightgray;
+  
+  background:
+    url("https://heropy.blog/css/images/logo.png");
+/*  기본값 background-attachment: scroll; */
+  background-attachment:fixed;
+  
+  margin:50px;
+  
+}
+
+
+
+.parent{
+  height:3000px;
+}
+
+section {
+  
+  height:300px;
+  border: 2px dashed lightgray;
+}
+
+.section2 {
+  background:
+    url("https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg");
+
+  background-size: auto 100%;
+  
+  background-position: right bottom;
+  background-attachment:fixed;
+/*   특정 세션의 배경요소를 고정해서 사용하는 경우 만들 수 있다.  */
+  
+}
+
+.section3{
+  background-image:url("https://image.istarbucks.co.kr/upload/common/img/main/2021/2021_summer1_bg.jpg");
+  background-position: right bottom;
+  background-attachment: fixed;
+  background-size:auto 100%;
+}
+
+
+
+
+
+/* scroll 예제 */
+
+
+.container{
+  width: 400px;
+  height: 300px;
+  border: 4px solid red;
+  margin: 50px;
+  overflow:auto;
+  background-image: url("https://heropy.blog/css/images/logo.png");
+  background-size:50%;
+/*  ?? 어디를 기준으로 사이즈의 50%가 되는가?  */
+/*   background-attachment: fixed; 전체를 기준으로 
+      background-attachmet: scroll; 고정되어 있음. */
+  
+/*   스크롤 배경에 딱 고정된 상태로 되지만,  local을 입력하면 fixed의 스크롤 안에 버전이 된다. */
+  
+  background-attachment: local;
+}
+
+.for_scroll{
+  height:2000px;
+}

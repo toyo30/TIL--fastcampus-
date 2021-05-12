@@ -1,0 +1,12 @@
+.child{
+  background:tomato;
+  border: 4px dashed black;
+  height: 300px;
+  width:600px;
+  float:left;
+}
+
+.clear{
+  clear:both;
+}
+ /* 해제까지 하기.  */

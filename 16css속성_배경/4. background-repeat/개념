@@ -1,0 +1,78 @@
+background repeat
+
+요소에 배경 하나 이상의 이미지를 삽입할 수 있다. 
+
+
+
+
+속성 값
+
+
+값          의미                          기본값
+repeat      배경 이미지를 수직, 수평으로 반복   repeat 왼쪽 상단에서 요소 크기대로 왼쪽 오른쪽 반복
+repeat-x    배경 이미지를 수평으로 반복
+repeat-y    배경 이미지를 수직으로 반복 
+no-repeat   반복 없음 
+
+
+url("asdasdflkjlkajsdf"/asdfads/asdf/a.img") 이미지 경로(url)
+
+
+url 함수의 인수로서 경로르
+
+
+background-image:url("경로");
+
+.box {
+    background-image: url("../img/imgae.jpg");
+    width:120px;
+    height:300px;
+}
+
+요소의 크기가 설정되어야지만 배경 이미지가 보일 수 있다. 
+
+
+
+.box{
+    background-image:url(""), url(""), url("")
+}
+
+하나 이상의 이미지를 삽입할 경우 , 로 구분한다. 
+
+먼저 자ㄱ성된 이미지가 더 위에 쌓인다. 
+
+
+
+
+.box{
+    background-image:url("") no repeat, url("") no repeat 100px 50px, 
+    url("") repeat-x;
+}
+
+완성을 하고 쉼표. 
+
+해당하는 경로의 추가적인 옵션을 넣은 후에 다중 이미지 
+
+ie 8 이후버젼 사용 불가. 
+
+
+
+
+@@@@기본적으로 요소가 이미지보다 크면 반복한다. 
+
+
+
+@@@먼저 삽입한 순서대로 앞에 있다. 
+
+
+
+
+예제 연습 
+
+1. 이미지 삽입
+
+2. 이미지 여러개 삽입
+???이미지를 왜 여러가지 삽입하지? 
+
+3. 이미지 반복. 하지 않기. 
+

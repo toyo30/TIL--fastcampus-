@@ -1,0 +1,16 @@
+.box {
+  background:
+    url("https://heropy.blog/css/images/vendor_icons/css3.png"), url(https://heropy.blog/css/images/vendor_icons/html5.png), url("https://heropy.blog/css/images/vendor_icons/javascript.png");
+  
+/*   기본적으로 왼쪽 상단을 기준으로 반복한다. 그러므로 repeat를 사용해주면 된다.  */
+  
+  background-repeat:no-repeat;
+  width: 750px;
+  height: 900px;
+/*   width, height 둘 다 삽입되어 있어야지 background img 넣기 가능 */
+  border: 2px dashed lightgray;
+}
+
+/* 인터넷에 있는 그림. 크롬 주소창에 넣고, 이미지 불러오기 
+개발자를 도구를 통해 찾고 - 우클릭 - open in a new tap 요소 찾기 
+*/

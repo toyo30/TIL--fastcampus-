@@ -1,0 +1,38 @@
+background attachment
+
+요소가 스크롤 될 때 배경 이미지와 스크롤 여부 설정 
+
+
+??? 스크롤을 만드는 방법이 뭐더라. 
+!! overflow: auto; 해서 만들 수도 있음. 
+
+속성 값
+
+
+값          의미                                    기본값
+scroll      배경 이미지가 요소를 따라서 같이 스크롤 됨       scroll
+
+            
+fixed       배경 이미지가 뷰포트(viewport)에 고정되어, 요소와 같이 스크롤되지 않음
+???이 fixed와 position의 fixed의 차이점은? 
+
+
+local       요소 내부에 배경이미지가 스크롤 시 같이 스크롤됨 
+
+
+
+
+
+
+사용법
+
+값이 방향일 경우
+
+background-position: 방향1 방향2; 
+!!순서를 바꿔도 된다. 
+
+값이 단위(%, px 등)일 경우 
+
+background-position: x축 y축; 
+
+!!순서를 뒤바꿀 수 없다. 

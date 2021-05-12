@@ -1,0 +1,48 @@
+요소의 배경을 설정하기 위해 
+
+
+속성 값
+
+값                 의미         기본값
+
+
+background-color 배경색상       transparent
+
+background-image   하나 이상의 배경 이미지  none
+
+background-repeat   배경 이미지의 반복      repeat
+
+
+
+background-position  배경 이미지의 위치     00          
+
+
+??? 이 position 은 위치를 지정해주는 그 position과 어떻게 같은 가 다른가. 
+-relative와 같이 자기 값을 가지고 이동하는가? 아니면..... 
+
+
+background-attachment 배경 이미지의 스크롤 여부(특성) scroll
+
+
+
+사용법
+
+backgroud: 색상 이미지경로 반복 위치 스크롤특성;
+
+
+
+background: red url("../img/image.jpg") no-repeat left top scroll
+
+요소의 왼쪽 상단에 위치 
+
+요소와 같이 스크롤 되겠다. 
+
+누락해서 사용해도 가능. 
+
+background: url("") no-repeat right 100px;
+
+이미지 경로 반복 위치 
+
+background: red; 
+
+색상만 가능. 

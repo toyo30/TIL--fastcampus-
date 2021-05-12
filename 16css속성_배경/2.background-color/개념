@@ -1,0 +1,16 @@
+background color
+
+요소에 배경 색상을 지정한다. 
+
+background-color : 색상 ;
+
+
+속성 값
+
+
+값          의미            기본값
+
+transparent 투명            transaparent
+
+
+tord

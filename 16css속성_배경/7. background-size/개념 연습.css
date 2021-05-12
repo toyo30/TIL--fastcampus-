@@ -1,0 +1,20 @@
+.box{
+  width:400px;
+  height: 300px;
+  border: 2px solid red;
+  margin: 50px;
+  background-image:url("https://heropy.blog/css/images/logo.png");/*500x 500*/
+  background-repeat:no-repeat;
+  
+/*   배경의 너비를 정확하게 인지하지 못할 때에는 가로 세로 모두 입력할 때, 
+  이미지가 개져나오는 경우가 있음. 그렇기에 하나의 값만 입력하는 것도 
+  방법이다.  */
+/*     background-size: 500px 100px; 찌그러짐 */
+/*   background-size:200px; */
+  
+/*   background-size: cover;  */
+/*   배경이미지가 이 요소를 커버하게 됨 요소의 조금더 넓은 형태로 만들어짐. 이미지가 잘릴 수도 있다. */
+  
+  background-size: contain;
+  /* 요소를 다 커버하는 것이다. 짧은 너비에 맞춰서 이미지가 생김 */
+}

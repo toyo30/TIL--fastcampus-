@@ -1,0 +1,53 @@
+background position
+
+요소 배경의 position 지정하기 
+
+
+??? 이 position 은 위치를 지정해주는 그 position과 어떻게 같은 가 다른가. 
+-relative와 같이 자기 값을 가지고 이동하는가? 아니면..... 
+
+!! position:relative와 같은 것은 밑에서부터의 거리 오른쪽에서의 거리를 계산하여
+더 자세하게 표현할 수 있지만, background position은 x축과 y축을 지정하기 때문에 
+그 값이 다르다고 할 수 있다. position과 관련된 속성의 경우, top, left, right, bottom:100
+이 있는데 background position의 경우 왼쪽 상단 0% 0%에서 오른쪽 하단 모서리 100%, 100%으로 지정한다. 
+px, em
+
+
+속성 값
+
+
+값          의미                          기본값
+%           왼쪽 상단 모서리는 0% 0%,           0% 0%
+            오른쪽 하단 모서리 100% 100% -right bottom과 동일하다. 
+
+방향         방향을 입력하여 위치 설정
+            top, bottom, left, right, center
+
+단위         px, em, cm 등 단위로 지정
+
+
+
+사용법
+
+값이 방향일 경우
+
+background-position: 방향1 방향2; 
+!!순서를 바꿔도 된다. 
+
+값이 단위(%, px 등)일 경우 
+
+background-position: x축 y축; 
+
+!!순서를 뒤바꿀 수 없다. 
+
+
+
+예제 연습 
+
+1. 값이 방향인 경우 
+
+2. 값이 단위인 경우 
+
+
+3. 값이 방향이랑 단위인 경우 썪어쓰기 
+주의해야 할점 x축(left, right) y축(top, bottom) 순서에 맞추어 쓰기

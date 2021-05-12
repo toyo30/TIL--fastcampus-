@@ -1,0 +1,43 @@
+.box {
+  
+  background-size:100px;
+  background:
+    url("https://heropy.blog/css/images/logo.png");
+/*   기본적으로 왼쪽 상단을 기준으로 반복한다. 그러므로 repeat를 사용해주면 된다.  */
+  
+  
+  
+  background-size:100px;
+  
+  background-repeat:no-repeat;
+  
+/*   bacground:(repeat-x, repeat-y, repeat) */
+  
+  width: 900px;
+  height: 900px;
+
+  border: 2px dashed lightgray;
+/*   background-position: right, left; 딱 요소 중간 오른쪽
+  
+  background-position: right bottom;  */
+  
+/*   background-position: bottom left;  */
+  
+/*   background-position: left center; 
+  
+  background-position: center;  */
+  
+/*   background-position: 0px 0px;  */
+  
+/*   background-position: 1000px 0px; 
+  화면이 입력되지 않는 경우는 요소의 크기를 벗어났기 때문이다.  */
+  
+/*   background-position: 100% 50px;  */
+  
+  
+  background-position: 50px bottom; 
+  
+/*   순서를 바꿔서 쓰면 안 됨, bottom top 은 y축
+  left right는 x축 첫번째 */
+  
+}
