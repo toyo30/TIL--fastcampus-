@@ -1,0 +1,47 @@
+.box{
+  width:100px;
+  height:100px;
+  background:tomato;
+  margin:50px;
+  
+/* /*   축약형 */
+/*   transition: width 1s, background 1s; */
+  
+  
+/*   transition-property: width, background; */
+  
+/*   무엇을 바꿀 것이냐. 지정해주지 않으면 다 바뀜. 
+  가로 사이지를 바꿀래. 배경 색상을 바꿀래  */
+/*   transition-duration: 1s; */
+/*   1초 동안 바뀌겠다.  쉽게 애니메이션 만들 수 있다.  */
+   
+/*   transition: all 1s;
+  transition: 1s; 
+  같은 의미로 쓰임
+  */
+  
+/*   transition: 2s steps(4); 뚝뚝끊기는 것을 말함.*/
+  
+/*   각각 다르게 주어서 애니매이션을 넣을 수도 있다. 
+  transition: width 1s; 색상은 바로 바뀌고 넓이는 천천히 늘어남*/
+  
+  
+  
+/*   transition-timing-function:easeOutBounce; */
+  
+/*   transition-timing-function: ease; */
+  
+/*   transition-timing-function: linear; */
+  
+  transition: 2s 3s steps(4);
+  
+/*   앞에 duration. 뒤에 delay */
+  
+  
+}
+
+.box:hover{
+  width:300px;
+  background:dodgerblue;
+  
+}

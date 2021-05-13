@@ -1,0 +1,49 @@
+.box{
+  width:200px;
+  height:200px;
+  background:tomato;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:30px;
+/*   각도를 지정해서 요소를 기울일 때 사용함. */
+/*   transform:rotate(90deg); */
+/*   transform:translate(100px, 30px);
+  x축 혼자만 쓰면 x축만 이동.  */
+  
+/*   transition:1s;
+  바뀌는 영역이 position:relative; 일 경우에 
+  transition:1s; 
+  
+  position: relative;
+  top:0;
+  left:0;
+  을 미리 지정해주어야지 자연스럽게 움직이게 된다.
+  최적화가 안 되어 있음.
+  */
+  margin:100px;
+  transition:1s;
+}
+
+
+.box:hover{
+  transform: translate(200px, 10px) skew(10deg, 10deg);
+/*   X축과 y축 모두 입력해야 한다. 
+  skewY skewX와 같이도 입력할 수 있다. 
+  skewX(10deg) 마름모 형태의 모양을 만들 수 있다. 
+   */
+/*   transform:scale(.8);
+  확대 축소 모두 가능 */
+/*   transform: translate(30px, 30px); */
+/*   translate라는 값을 통해 지정되었기 때문에 굉장히 최적화해서 값이 많아져도 적용할 수 있다.   */
+  
+  
+/*    position:relative;
+  left:100px;
+  top:30px; */
+  
+/*   포지션의 경우 가상의 공간이 생김 
+  배치하고 끝내는 개념이라면 position을 사용해야 한다. 
+  
+  언제든지 이동할 수 있으려면 translate를 써야한다.  */
+}
