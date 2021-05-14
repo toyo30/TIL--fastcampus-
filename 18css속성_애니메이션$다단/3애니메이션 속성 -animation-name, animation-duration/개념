@@ -1,0 +1,65 @@
+animation-name
+
+
+@keyframes 규칙(애니메이션 프레임)의 이름을 지정 
+
+
+
+
+값                의미                                        기본값
+
+none              애니메이션을 지정하지 않음                        none
+
+
+@keyframes        이름이 일치하는 @keyframes 규칙의 애니메이션을 적용
+
+
+
+
+값                      의미                            기본값
+
+animation-name          @keyframes 규칙의 이름을 지정       none
+
+???@keyframes???
+엣키프레임즈라고 읽음.  
+직접 애니메니션을 집적 적용하여 속성을 만드는 것이 아니라 키프레임즈에 선언된 에니메이션 정의를 설정하고 제어하는 기능이다.  
+
+
+!!!!@keyframes를 통해 애니메이션을 선언하는 것이고, animation 속성을 통해 불러와서 설정하고 제어하는 기능. 
+
+
+animation-duration      애니메이션의 지속 시간 설정            0s
+
+
+!!!!지속 시간이라는 의미. 
+
+
+
+animation-timing-function   타이밍 함수 지정(타이밍 함수란?)    ease
+
+
+!!!! 
+
+
+
+
+
+
+
+animation-delay             애니메이션의 대기 시간 설정         0s
+
+
+animation-iteration-count   애니메이션의 반복 횟수 설정         1
+
+
+animation-direction         애니메이션의 반복 방향 설정         normal
+
+
+animation-fill-mode         애니메이션의 전후 상태(위치) 설정   none
+
+
+animation-play-state        애니메이션의 재생과 정지 설정       running
+
+
+
+

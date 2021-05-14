@@ -1,0 +1,19 @@
+p{
+  column-width: 300px;
+  column-count:3;
+  
+  
+/*   개별 단의 너비가 200px 보다 줄어들었을 경우 단의 설정한 단의 개수가 줄어든다. */
+  
+/*   단축속성은?  */
+  columns: 150px 3;
+  column-gap:20px;
+  text-align: justify;
+  column-rule: 2px dashed blue;
+  
+/*   dashed double black*/
+  
+ color:red;
+  
+/*  column-rule은 기본값으로 글자 색이랑 동일하다.  */
+}

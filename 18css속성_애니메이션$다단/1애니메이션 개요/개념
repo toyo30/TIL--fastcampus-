@@ -1,0 +1,75 @@
+animation
+
+요소에 애니메이션을 설정/제어하는 속성
+
+
+transform은 정해진 변화를 적용할 수 있다면 
+@keyframes의 경우에는 자신이 함수를 만들어서 적용할 수 있다. 
+
+
+animation: 함수이름 duration-시간; 
+
+까지 정해줘야 동작할 수 있음.
+
+
+
+
+
+값                      의미                            기본값
+
+animation-name          @keyframes 규칙의 이름을 지정       none
+
+???@keyframes???
+엣키프레임즈라고 읽음.  
+직접 애니메니션을 집적 적용하여 속성을 만드는 것이 아니라 키프레임즈에 선언된 에니메이션 정의를 설정하고 제어하는 기능이다.  
+
+
+!!!!@keyframes를 통해 애니메이션을 선언하는 것이고, animation 속성을 통해 불러와서 설정하고 제어하는 기능. 
+
+
+animation-duration      애니메이션의 지속 시간 설정            0s
+
+
+animation-timing-function   타이밍 함수 지정(타이밍 함수란?)    ease
+
+
+animation-delay             애니메이션의 대기 시간 설정         0s
+
+
+animation-iteration-count   애니메이션의 반복 횟수 설정         1
+
+
+animation-direction         애니메이션의 반복 방향 설정         normal
+
+
+animation-fill-mode         애니메이션의 전후 상태(위치) 설정   none
+
+
+animation-play-state        애니메이션의 재생과 정지 설정       running
+
+
+
+
+
+
+
+사용 방법
+animation: 애니메이션 이름 지속시간 [타이밍함수 대기시간 반복횟수 반복방향 전후상태 재생/정지];
+
+!!! 애니메이션 이름이라는 것은 @keyframes 규칙을 통해서 만들어진 이름을 말한다. 
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    animation: hello 2s linear infinite both;
+}
+
+!!!animation  사용 방법이랑 
+왜 밑의 내용이 다를까? 
+
+@keyframes hello {
+    0% {width: 200px;}
+    100% {width: 50px;}
+}
+

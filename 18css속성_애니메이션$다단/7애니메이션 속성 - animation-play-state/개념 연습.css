@@ -1,0 +1,41 @@
+.box {
+  width: 150px;
+  height: 100px;
+  background: tomato;
+  border-radius:10px;
+  margin: 20px;
+  animation: size-up 3s linear infinite alternate;
+  color: white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 40px;
+}
+
+/* css를 이용해서는 html의 값을 지우거나 추가할 수 없다. 그래서 가상요소 선택자를 입력해야 함. */
+
+.box:before{
+  content:"running";
+  font-weight:700;
+}
+.box:hover{
+  animation-play-state: paused;
+  background: dodgerblue;
+}
+
+/* 클래스 선택자, 가상 클래스 선택자, 가상 요소 선택자.  */
+.box:hover::before {
+  content:"paused";
+/*   컨텐츠는 변하고 안의 속성들은 변하지 않나봐 */
+}
+
+
+
+@keyframes size-up {
+  0% {
+    width: 150px;
+  }
+  100% {
+    width: 100%;
+  }
+}
