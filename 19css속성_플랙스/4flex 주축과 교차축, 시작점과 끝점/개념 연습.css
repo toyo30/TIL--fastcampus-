@@ -1,0 +1,59 @@
+.box {
+  width: 150px;
+  height: 100px;
+  border-radius:10px;
+  margin: 10px;
+  color: white;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 30px;
+}
+
+.box1 {
+  background:tomato;
+}
+
+.box2 {
+  background:dodgerblue;
+}
+
+.box3 {
+  background: yellowgreen;
+}
+
+
+
+.box1:hover{
+  animation: size-up 1s 2 alternate;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+
+/* 줄어드는 것도 반복이라고 할 수 있다. 
+기본값이 1회 그러니까 반복을 하려면 최소 값이 2회가 되어야 한다. */
+
+.box2:hover {
+  animation: size-up 3s 2 alternate /*1s가능하다 duration 앞에만 적지 않으면 가능 */linear 1s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+
+.box3:hover {
+  animation: size-up 2s 2 linear alternate;
+  animation-timing-function: linear;
+  animation-delay: -1s;
+  
+}
+
+@keyframes size-up{
+  0% {
+    width:150px;
+    
+  }
+  
+  100%{
+    width: 500px;
+    
+  }
+}

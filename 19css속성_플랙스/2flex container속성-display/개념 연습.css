@@ -1,0 +1,34 @@
+.container {
+  border:2px solid red;
+  display:inline-flex;
+}
+
+.item{
+  width:100px;
+  height: 100px;
+  background: tomato;
+  margin: 30px;
+  
+}
+
+/* .clearfix::after {
+  content: '';
+  clear:both;
+  display:block;
+} */
+
+/* 클리어픽스를 적어 놓고, 해주는 것이 좋다 
+한 css의 모든 클리어 픽스를 한번에 적용해 줄 수 있으니까. */
+
+/* 인라인요소는 가로세로 값을 가질 수 없음 
+inline-block은 인라인 요소의 특성을 가지고 있음. 
+인라인 요소는 텍스트를 처리하는데 특화되어있음.
+요소를 붙여서 사용하려면 부모요소에 font-size를 0으로 만들어주어야 한다. 
+이렇게 여백을 없애 준다음 글자를 넣어주려면 다시 자식요소에 폰트사이즈를 입력해야 했다. 
+
+float를 해버리면 부모요소가 자식 요소를 감싸지 못한다. 그래서 꼭 clear해주어야 했다. */
+
+
+
+
+/* 그래서 부모요소에 flex를 넣는 방법으로 수평화하는 것이 등장함 */

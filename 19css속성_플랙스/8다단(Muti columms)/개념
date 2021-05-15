@@ -1,0 +1,109 @@
+multi-columns
+
+일반 블록 레이아웃을 확장하여 
+여러 텍스트 다단으로 쉽게 정리하며, 가독성 확보 
+
+
+텍스트 다단을 만들기. 
+
+
+
+
+colums 
+
+다단을 정의 
+
+
+
+값                  의미는                        기본값
+
+auto                브라우저가 단위 너비와 개수를 설정   auto
+
+
+colums-width        단위 최적 너비를 설정             auto
+
+
+colums-count        단의 개수를 설정                 auto
+
+
+columns: 너비 개수; 
+
+
+.text {
+    columns: 100px 2;
+}
+
+컬럼스의 단위를 스스로 지정해보기 위해서 colums 단축 속성을 사용한다. 
+
+
+column-width
+단위 최적 너비를 설정 
+
+
+
+값          의미                     기본값
+
+auto        브라우저가 단위 너비를 설정   auto
+
+
+단위        px, em, cm 등 단위로 지정 
+
+
+column-width: 너비; 
+
+
+각 단이 줄어들 수 있는 최적 너비(최소너비)를 설정하며, 
+요소의 너비가 가변하여 하나의 단이 최적 너비보다 줄어들 경우 단위 개수가 조정됩니다. 
+
+
+
+column-count
+단위 개수를 설정
+
+
+값          의미                    기본값
+auto        브라우저가 단위 개수를 설정     auto
+
+
+숫자          단의 개수를 설정
+
+
+column-count: 개수; 
+
+
+
+
+column-gap
+
+단과 단 사이의 간격 설정
+
+
+값              의미                                        기본값
+
+normal          브라우저가 단과 단 사이의 간격을 설정(1em= font-size)          normal
+
+단위              px, em, cm 등 단위로 지정
+
+
+column-gap: 간격; 
+
+
+
+
+column-rule 
+
+단과 단 사이의 (구분)선을 지정(단축속성)
+
+
+값              의미는          기본값
+
+column-width   선의 두께를 지정   medium
+
+column-style   선의 종류를 지정     none
+
+column-color   선의 색상을 지정     요소의 글자색과 동일
+
+
+column-rule: 두께 whdfb tortkd; 
+
+구분선은 단과 단 사이에 존재한다. 
