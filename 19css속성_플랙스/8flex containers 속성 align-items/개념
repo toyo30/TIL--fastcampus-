@@ -1,0 +1,35 @@
+align-items
+
+
+교차 축(cross-axis)에서 Items의 정렬 방법을 설정합니다.
+Items가 한 줄일 경우 많이 사용합니다.
+
+주의할 점은 Items가 flex-wrap을 통해 여러 줄(2줄 이상)일 경우에는 align-content 속성이 우선합니다.
+따라서 align-items를 사용하려면 align-content 속성을 기본값(stretch)으로 설정해야 합니다.
+
+값	의미	기본값
+stretch	Container의 교차 축을 채우기 위해 Items를 늘림	stretch
+
+
+flex-start	Items를 각 줄의 시작점(flex-start)으로 정렬	
+
+!! 각 첫 세로줄의 시작점을 기준으로 정렬됨. 2줄 이상일 때는 align-content가 먼저 적용됨으로 
+!! 주의해야함. 
+
+
+flex-end	Items를 각 줄의 끝점(flex-end)으로 정렬	
+
+
+center	Items를 가운데 정렬	
+
+
+baseline	Items를 문자 기준선에 정렬	
+
+베이스라인은 글자크기가 다르지만, 글자 문자열의 기준선으로 정렬함. 
+
+
+align-items: 정렬방법;
+
+
+
+???align-content와 비교하여 한줄 한줄에 적용해주는 속성을 말한다. 

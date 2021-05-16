@@ -39,4 +39,4 @@ flex일 경우 blodck요소 처럼 사용 . 보모 요소가 블럭요소처럼 
 
 
 
-inline-block요소는 container자체가 inline요소처럼 사용이 됨.
+inline-block요소는 container자체가 inline요소처럼 사용이 됨. 

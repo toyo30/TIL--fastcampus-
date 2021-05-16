@@ -1,0 +1,42 @@
+align-self
+교차 축(cross-axis)에서 개별 Item의 정렬 방법을 설정합니다.
+
+
+
+align-items는 Container 내 모든 Items의 정렬 방법을 설정합니다.
+
+
+
+
+
+
+
+필요에 의해 일부 Item만 정렬 방법을 변경하려고 할 경우 align-self를 사용할 수 있습니다.
+이 속성은 align-items 속성보다 우선합니다.
+
+
+@@@ 특정한 item하나에 다른 정렬 기준을 설정하고 싶다면 align-item을 지정해준다. 
+
+
+
+
+값	의미	기본값
+auto	Container의 align-items 속성을 상속받음	auto
+stretch	Container의 교차 축을 채우기 위해 Item을 늘림	
+flex-start	Item을 각 줄의 시작점(flex-start)으로 정렬	
+flex-end	Item을 각 줄의 끝점(flex-end)으로 정렬	
+center	Item을 가운데 정렬	
+baseline	Item을 문자 기준선에 정렬	
+
+
+
+
+
+
+
+
+
+
+
+
+align-self: 정렬방법;

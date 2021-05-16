@@ -1,0 +1,37 @@
+.container {
+  border: 5px solid black;
+  display:flex;
+  flex-wrap:wrap;
+  height:400px;
+/*   align-items:stretch; */
+  
+  align-items: flex-start;
+  
+  align-items: flex-end;
+  
+  align-items: center;
+  
+  align-items: baseline;
+  
+  
+  
+  
+}
+
+.container .item {
+  width:120px;
+  
+  background: tomato;
+  border: 4bx dashed red;
+  border-radius:10px;
+  font-size:30px;
+  display:flex;
+/*   아이템 부분도 플랙스로 만들어야 이 안에 글자를 수직정렬시킬 수 있음. */
+  justify-content:center;
+  align-items:center;
+}
+
+
+.container .item:nth-child(3){
+  font-size:50px;
+}
