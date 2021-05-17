@@ -1,0 +1,50 @@
+grid-template-areas
+지정된 그리드 영역 이름(grid-area)을 참조해 그리드 템플릿을 생성합니다.
+
+
+여러가지 아이템 지점들 중에서 grid area가 설정된다. 
+
+
+
+
+grid-area는 Grid Container가 아닌 Grid Item에 적용하는 속성입니다.
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+}
+
+9개의 각각 이름을 만든다. 
+
+
+header { grid-area: header; }
+main   { grid-area: main;   }
+aside  { grid-area: aside;  }
+footer { grid-area: footer; }
+CSS Grid
+
+
+각 영역에 태그를 설정한다. 
+
+
+.(마침표)를 사용하거나 명시적으로 none을 입력해 빈 영역을 정의할 수 있습니다.
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "main . ."
+    "main . aside"
+    "footer footer footer";
+}
+header { grid-area: header; }
+main   { grid-area: main;   }
+aside  { grid-area: aside;  }
+footer { grid-area: footer; }

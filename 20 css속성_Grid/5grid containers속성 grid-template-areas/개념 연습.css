@@ -1,0 +1,37 @@
+.container {
+  width: 600px;
+  display:grid;
+  grid-template-rows:repeat(3, 100px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer"
+    
+/*    차지하고 싶어하지 않으면 .을 입력하기  
+   각 item의 영역을 지정하고 싶을 때 사용하고 
+    각 크기의 지정된 너비를 지정하고 싶으면 rows, column and width값 지정해주기. */
+}
+
+.item {
+  border: 10px solid red;
+}
+
+.item:nth-child(1) {
+  grid-area: header;
+}
+
+.item:nth-child(2) {
+  grid-area: main;
+}
+
+.item:nth-child(3) {
+  grid-area: aside;
+}
+
+.item:nth-child(4) {
+  grid-area: footer;
+}
+
+
+

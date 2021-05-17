@@ -1,0 +1,65 @@
+grid-template-rows와 grid-template-colunms가 
+명시적 행의 크기를 정했디면 
+
+grid-auto-rows와 
+
+grid-auto-column은 
+
+암시적 행의 크기를 정의해준다. 그렇다면 암시적이라는 것은 뭘까? 
+명시적으로 정의되지 않은 것의 크기를 설정하는 것이다. 
+
+
+grid-auto-rows
+암시적 행(Track)의 크기를 정의합니다.
+아이템(Item)이 grid-template-rows로 정의한 명시적 행 외부에 배치되는 경우 암시적 행의 크기가 적용됩니다.
+
+
+<div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+.container {
+  width: 300px;
+  height: 200px;
+  display: grid;
+  grid-template-rows: 100px 100px; /* 명시적 2개 행 정의 */
+  grid-template-columns: 150px 150px; /* 명시적 2개 열 정의 */
+
+
+
+  grid-auto-rows: 100px; /* 그 외(암시적) 행의 크기 정의 */
+}
+.item:nth-child(3) {
+  grid-row: 3 / 4;
+}
+CSS Grid
+
+grid-auto-columns
+암시적 열(Track)의 크기를 정의합니다.
+아이템(Item)이 grid-template-columns로 정의한 명시적 열 외부에 배치되는 경우 암시적 열의 크기가 적용됩니다.
+
+.container {
+  width: 300px;
+  height: 200px;
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 150px 150px;
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
+}
+.item:nth-child(3) {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+}
+
+
+
+CSS Grid
+
+다음과 같이 아이템이 배치되는 위치에 맞게 암시적 행과 열의 개수가 생성됩니다.
+암시적 크기가 적용된 행과 열은 양수 라인 번호만 사용할 수 있습니다.(음수 사용 불가)
+양수라인 번호만 사용 가능. 
+
+
+CSS Grid

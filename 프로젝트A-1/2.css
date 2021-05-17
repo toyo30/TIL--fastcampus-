@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* 폰트 */
+
+html {
+    font-family: '나눔 고딕', 'NanumGothic', '돋움', 'Dotum', sans-serif;
+}
+
+
+/* reset */
+
+body, div, h1, h2, h3, p, a,
+address, ul, li, article,
+footer, header,
+nav, section {
+    margin:0; 
+    padding:0; 
+    border: none;
+    font-size: 100%;
+    font: inherit;
+}
+
+ul, ol, li {
+    list-style:none;
+    text-decoration:none;
+}
+
+/* 헤더 */
+
+.header_box {
+    background:black;
+    height: 120px;
+    width: 100%;
+}
+
+h1 {
+    width:1080px;
+    height:120px;
+    margin: 0 auto;
+    color:#fff;
+    text-indent:40px;
+    font-size:40px;
+    font-weight:bold;
+    line-height: 120px;
+}
+
+
+/* 메뉴 */
+
+.container_box {
+    width:1080px;
+    height:100%;
+    margin:0 auto;
+}
+
+.nav_box {
+    margin:0 auto;
+    display: flex;
+    padding:40px;
+}
+
+.nav_section {
+    height: 33px;
+    border: 1px solid #d1d1d1;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-grow:1;
+    flex-basis:0;
+}
+
+
+.nav_section:hover{
+    color: #454545;
+    font-weight: bold;
+}
+
+.nav_section + .nav_section {
+    margin-left:14px;
+}
+
+
+
+/* container */
+
+.sub_title {
+    border-bottom: 1px solid #454545;
+    font-size:20px;
+    color:#000;
+    padding-bottom: 20px;
+    width:1000px;
+    margin:0 auto;
+}
+
+
+
+.body_box {
+    margin:0 auto;
+    width:1000px;
+    margin-top:30px;
+    border:1px solid #d1d1d1;
+}
+
+.body_box:nth-child(3n) {
+    margin-bottom:40px;
+}
+
+
+.content_title {
+    
+    text-indent:15px;
+    font-size:16px;
+    color:#333;
+    font-weight:bold;
+    background: #f7f7f7;
+    height:46px;
+    line-height:46px;
+}
+
+.content_box {
+    border: 1px solid #d1d1d1;
+    border-top:none;
+    width:1000px;
+    margin:0 auto;
+}
+
+
+
+
+/* footer */
+
+.footer {
+    border-top: 1px solid #d1d1d1;
+    text-align: center;
+    font-size:12px;
+    padding: 20px;
+
+}
+
+.address_text{
+    width:1000px;
+    margin:0 auto;
+    color:#999;
+    
+}
+
+.footer_text {
+    width:1000px;
+    margin:0 auto;
+    color: #000;
+}

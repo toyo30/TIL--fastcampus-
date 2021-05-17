@@ -1,0 +1,12 @@
+display
+Grid Container(컨테이너)를 정의합니다.
+정의된 컨테이너의 자식 요소들은 자동으로 Grid Items(아이템)로 정의됩니다.
+
+그리드를 사용하기 위해 컨테이너에 필수로 작성합니다!
+
+값	의미
+grid	Block 특성의 Grid Container를 정의
+inline-grid	Inline 특성의 Grid Container를 정의
+.container {
+  display: grid;
+}

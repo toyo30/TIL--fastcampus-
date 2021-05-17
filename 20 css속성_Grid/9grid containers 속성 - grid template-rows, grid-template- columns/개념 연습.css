@@ -1,0 +1,19 @@
+.container {
+  width: 600px;
+  display: grid;
+/*   grid-template-rows: 100px 100px;
+  grid-template-columns: 1fr [center-start ]1fr [center-end] 1fr; 
+  grid-auto-flow:dense; */
+  grid-template-columns: repeat(2, 100px 200px);
+}
+
+.item {
+  border: 10px solid red;
+}
+
+/*
+
+.item:nth-child(1) {
+  grid-column: center-start / center-end;
+   */
+/*   중요하고 명확한 부분에 이름을 설정해서 사용하는 것을 추천한다.  */
