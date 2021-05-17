@@ -1,0 +1,72 @@
+align-content
+그리드 콘텐츠(Contents)를 수직(열 축) 정렬합니다.
+그리드 콘텐츠의 세로 너비가 그리드 컨테이너(Container)보다 작아야 합니다.
+
+@@@수직정렬을 의미하는 컨텐츠다. 
+
+
+
+
+값	의미	기본값
+normal	stretch와 같습니다.	normal
+start	시작점(위쪽) 정렬	
+center	수직 가운데 정렬	
+end	끝점(아래쪽) 정렬	
+space-around	각 행 위아래에 여백을 고르게 정렬	
+space-between	첫 행은 시작점에, 끝 행은 끝점에 정렬되고 나머지 여백으로 고르게 정렬	
+
+
+space-evenly	모든 여백을 고르게 정렬
+
+
+stretch	열 축을 채우기 위해 그리드 콘텐츠를 늘림	
+
+
+
+
+.container {
+  width: 450px;
+  height: 450px;
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 100px);
+  align-content: <align-content>;
+}
+
+
+
+
+
+
+
+
+
+
+
+justify-content
+그리드 콘텐츠(Contents)를 수평(행 축) 정렬합니다.
+그리드 콘텐츠의 가로 너비가 그리드 컨테이너(Container)보다 작아야 합니다.
+
+
+
+
+
+
+
+값	의미	기본값
+normal	stretch와 같습니다.	normal
+start	시작점(왼쪽) 정렬	
+center	수평 가운데 정렬	
+end	끝점(오른쪽) 정렬	
+space-around	각 열 좌우에 여백을 고르게 정렬	
+space-between	첫 열은 시작점에, 끝 열은 끝점에 정렬되고 나머지 여백으로 고르게 정렬	
+space-evenly	모든 여백을 고르게 정렬	
+stretch	행 축을 채우기 위해 그리드 콘텐츠를 늘림	
+.container {
+  width: 450px;
+  height: 450px;
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 100px);
+  justify-content: <justify-content>;
+}

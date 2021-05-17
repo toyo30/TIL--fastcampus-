@@ -1,0 +1,128 @@
+grid-row
+grid-row-start과 grid-row-end의 단축 속성입니다.
+각 속성을 /로 구분하는 것에 주의하세요.
+
+.item {
+  grid-row: <grid-row-start> / <grid-row-end>;
+  grid-row: 1 / 4; 
+
+}
+각 코드 블록 내 아이템(.item)들은 모두 같은 의미입니다.
+
+.item {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.item {
+  grid-row: 1 / 2;
+}
+.item {
+  grid-row-start: 2;
+  grid-row-end: span 3;
+}
+.item {
+  grid-row: 2 / span 3;
+}
+.item {
+  grid-row: 2 / 5;
+}
+.item {
+  grid-row-start: span 3;
+  grid-row-end: 4;
+}
+.item {
+  grid-row: span 3 / 4;
+}
+.item {
+  grid-row: 1 / 4;
+}
+grid-column
+grid-column-start과 grid-column-end의 단축 속성입니다.
+각 속성을 /로 구분하는 것에 주의하세요.
+
+.item {
+  grid-column: <grid-column-start> / <grid-column-end>;
+}
+각 코드 블록 내 아이템(.item)들은 모두 같은 의미입니다.
+음수 결과를 위해 span 키워드를 ‘시작 위치’에 작성함에 주의하세요!
+
+.item {
+  grid-column-start: -1;
+  grid-column-end: -3;
+}
+.item {
+  grid-column: -1 / -3;
+}
+.item {
+  /* Column -1번에서 -3번(-1-2=-3)까지 */
+  grid-column: span 2 / -1;
+}
+.item {
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+.item {
+  /* Column 2번에서 끝(-1번)까지 */
+  grid-column: 2 / -1;
+}
+
+
+
+
+
+
+
+
+grid-area
+grid-row-start, grid-column-start, grid-row-end 그리고 grid-column-end의 단축 속성입니다.
+grid-area의 또다른 속성이다. 
+
+
+
+혹은 grid-template-areas가 참조할 영역(Area) 이름을 설정할 수도 있습니다.
+영역 이름을 설정할 경우 grid-row와 grid-column 개념은 무시됩니다.
+
+
+
+
+
+.item {
+  grid-area: <grid-row-start> / <grid-column-start> / <grid-row-end> / <grid-column-end>;
+
+시작 시작 명시 / 로우 끝 컬럼 끝
+
+ 
+  grid-area: 영역이름;
+}
+각 코드 블록 내 아이템(.item)들은 모두 같은 의미입니다.
+
+.item {
+  grid-row: 2 / 3;
+  grid-column: span 2 / -1;
+}
+.item {
+  /* '시작 / 시작 / 끝 / 끝'임에 주의합시다! */
+  grid-area: 2 / span 2 / 3 / -1;
+}
+다음과 같이 영역 이름을 지정해 grid-template-areas에서 참조할 수 있습니다.
+
+<div class="container">
+  <header class="item">HEADER</header>
+  <main class="item">MAIN</main>
+  <aside class="item">ASIDE</aside>
+  <footer class="item">FOOTER</footer>
+</div>
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 90px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "main main aside"
+    "main main ."
+    "footer footer footer";
+}
+header.item { grid-area: header; }
+main.item   { grid-area: main;   }
+aside.item  { grid-area: aside;  }
+footer.item { grid-area: footer; }

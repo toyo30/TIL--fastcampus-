@@ -1,0 +1,51 @@
+row 행     column 열 
+
+행을 합치기 때문에 html rowspan   세로값이 변함
+열을 합치기 때문에 html colspan   가료걊이 변함
+
+
+grid-template-rows: 행을 합침    세로값이 변함
+grid-template-colspan 열을 합침  가로값이 변함 
+
+
+grid-template
+grid-template-rows, grid-template-columns 그리고 grid-template-areas의 단축 속성입니다.
+
+.container {
+  grid-template: <grid-template-rows> / <grid-template-columns>;
+  grid-template: <grid-template-areas>;
+}
+다음과 같이 작성할 수도 있습니다.
+
+.container {
+  grid-template:
+    [1행시작선이름] "AREAS" 행너비 [1행끝선이름]
+    [2행시작선이름] "AREAS" 행너비 [2행끝선이름]
+    / <grid-template-columns>;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template:
+    "header header header" 80px       -> 각 행의 크기를 바로 정해버리기 
+    "main main aside" 350px           -> 
+    "footer footer footer" 130px
+    / 2fr 100px 1fr;                   -> 열의 크기도 정해버리기. columns
+}
+header { grid-area: header; }
+main   { grid-area: main; }
+aside  { grid-area: aside; }
+footer { grid-area: footer; }
+위 예제의 컨테이너는 다음과 같이 해석할 수 있습니다.
+
+.container {
+  display: grid;
+  grid-template-rows: 80px 350px 130px;     
+  grid-template-columns: 2fr 100px 1fr;
+  grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+}

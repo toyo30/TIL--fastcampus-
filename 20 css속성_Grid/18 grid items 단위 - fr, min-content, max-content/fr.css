@@ -1,0 +1,14 @@
+/* fr */
+
+
+.container {
+  border: 10px solid lightgray;
+  display:grid;
+  grid-template-columns: 2fr 1fr 100px 25%;
+  
+/*   구체적인 숫자 이후에 남은 부분을 1fr의 비율로 너비를 지정함. */
+}
+
+.item {
+  border:10px solid red;
+}

@@ -1,0 +1,19 @@
+.container {
+  border: 10px solid lightgray;
+  display:grid;
+  
+  grid-template-columns:man-content 1fr;
+  
+/*   min-content 최소 
+  max-content 최소한의 단위  
+  
+  한글에서 뛰어쓰기 단위로 min-content를 쓰려면 
+  word-break: keep-all;
+  을 쓰면 됨. */
+  
+
+}
+
+.item {
+  border : 10px solid red;
+}

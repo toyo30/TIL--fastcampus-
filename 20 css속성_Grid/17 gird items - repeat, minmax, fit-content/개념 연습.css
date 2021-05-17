@@ -1,0 +1,14 @@
+.container {
+  border: 10px solid lightgray;
+  display:grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns:fit-content(300px) fit-content(300px);
+  
+/*   최대한의 컨텐츠의 크기에 맞춤. 
+  fit-content(100%) 가능*/
+  
+}
+
+.item {
+  border : 10px solid red;
+}
