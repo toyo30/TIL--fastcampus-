@@ -1,0 +1,17 @@
+div {
+  
+  height:100px;
+/*   block요소일 경우 가로 세로가 모두 auto일 때,
+  가로사이지를 100%, height:0;으로 인식한다.  
+  !!0px, 0em, 0rem모두 0으로 인식하기 때문에 단위를 적어주지 않아도 된다. */
+  background:tomato;
+
+}
+
+span {
+  width:100px;
+  height:100px;
+  background:tomato;
+/*   inline요소일 경우, 가로 사이즈 0, 세로 사이즈 0에서 출발한다.  인라인요소는 가로세로 값을 가질 수 없다. 화면에는 그래서 출력하지 않는다. 그래서 
+  text를 다루는데 특화되어 있다. */
+}

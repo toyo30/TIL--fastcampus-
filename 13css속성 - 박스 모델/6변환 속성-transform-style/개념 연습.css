@@ -1,0 +1,35 @@
+.perspective {
+  width:300px;
+/*   width를 같지 않게 해주면 어떤 일이 일어날까? */
+  perspective: 500px;
+  padding:70px;
+  
+}
+
+.grand-parent {
+  width:200px;
+  border:3px solid dodgerblue;
+  transition: 1s;
+  transform: rotateX(-45deg);
+  transform-style:preserve-3d;
+}
+
+.parent{
+  width:200px;
+  border:3px solid tomato;
+  transition:1s;
+  transform: rotateY(45deg);
+  transform-style:preserve-3d;
+}
+
+img {
+  width:200px;
+  border:3px solid lightgray;
+  transition:1s;
+  transform: rotateX(45deg);
+}
+
+/* 
+????width를 같지 않게 해주면 어떤 일이 일어날까?
+
+!!! 자식 요소마다 transform-style:preserve-3d; 를 해주어야 함.  */

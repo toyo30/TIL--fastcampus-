@@ -1,0 +1,49 @@
+.box-group{
+  display:flex;
+  
+}
+.box-group .box{
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  border: 4px dashed red;
+  border-radius:10px;
+  font-size:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-right:-30px;
+  box-shadow: 0 0 10px rgba(255,0,0,.7);
+}
+
+.box-group .box:nth-child(2n){
+  margin-top: 30px;
+}
+
+
+.box1{
+  position:relative;
+  z-index: 100;
+  
+/*  포지션이 있을 때만 동작한다.  */
+}
+.box2{
+  position:relative;
+  
+}
+.box3{
+  position:relative;
+/*   포지션 없는 box5보다 위에 있음.  */
+  z-index: 0;
+  
+}
+.box4{
+  position:relative;
+  
+/*   포지션이 입력되니까 제일 앞으로 올라옴.  */
+  
+}
+.box5{
+  position:relative;
+  
+}

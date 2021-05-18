@@ -1,0 +1,55 @@
+html 애밋문법 
+
+
+
+.box  
+
+tab
+
+<div class="box"></div>
+
+
+
+ ul
+
+ tab
+
+ <ul></ul>
+
+
+
+ ul.list
+
+ tab
+ <ul class="list"></ul>
+
+
+ .container>ul.list>li.list-item*10>a{list$}
+
+tab
+ 컨테이너라는 div 클래스 안에 ul태그를 만들고 ul태그는 list라는 클래스를 가지고 있고, 
+ul태그의 자식요소로 li태그를 만들고.   10개. 
+
+
+
+css 애밋문법 
+
+.box{
+    w:100
+}
+
+
+width:100px;
+
+h:100%
+
+height:100%;
+
+
+
+
+
+https://docs.emmet.io/abbreviations/syntax/
+
+
+구체적인 설명

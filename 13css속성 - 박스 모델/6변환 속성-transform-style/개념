@@ -1,0 +1,44 @@
+transform 변환 속성 
+
+
+속성                    의미
+
+
+transform-origin        요소 변환의 기준점을 설정
+
+
+!!! 회전을 할 때 기준점을 지정. 
+
+
+transformo-style        3D 변환 요소의 자식 요소도 3D 변환을 사용할지 설정
+
+
+!! 3차원 변환 요소의 자식 요소도 변환이 적용되지 않는데, 자식 요소도 사용할 수 있도록 설정하는 것. 
+
+perspective             하위 요소를 관찰하는 원근 거리를 설정
+
+!!perspective   속성과 perspective 함수는 다른데 어떻게 다른가. 아까 함수는 transform:perspective() 처럼 쓰여서 보이는 관점을 설정해줌. 
+
+perspective-origin      원근 거리의 기준점을 설정   
+
+!!원근 거리의 기준점을 설정해준다. 
+
+backface-visibility     3D 변환으로 회전된 요소의 뒷면 숨김을 설정
+
+
+
+transform-style
+
+3D 변환 요소의 자식 요소도 3D 변환을 사용할지 설정
+
+값              의미                                    기본값
+flat            자식 요소의 3D 변환을 사용하지 않음           flat
+
+
+
+
+
+
+preserve-3d     자식 요소의 3D 변환을 사용함              
+
+

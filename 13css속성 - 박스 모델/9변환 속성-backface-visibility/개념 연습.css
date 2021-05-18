@@ -1,0 +1,8 @@
+img {
+  width:300px;
+  border:3px solid lightgray;
+  transition:1s;
+  transform: perspective(400px) rotateY(40deg);
+  backface-visibility:hidden;
+  /*   카드를 뒤집는 예제를 할 때 이것을 사용할 수 있다. */
+}
