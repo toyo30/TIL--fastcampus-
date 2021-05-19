@@ -1,0 +1,12 @@
+
+
+.container {
+  width: 50vmax;
+/*   vmax현재 뷰포트의 넓은 사이즈를 의미함 
+  뷰포트의 가로사이즈가 클 때는 가로의 50% 
+  
+  세로사이즈가 더 클 때는 세로사이즈의 50%*/
+  
+  height:300px;
+  background:red;
+}
