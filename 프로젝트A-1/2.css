@@ -20,21 +20,17 @@ nav, section {
     font: inherit;
 }
 
-ul, ol, li, a, a:active a:hover{
+ul, ol, li {
     list-style:none;
     text-decoration:none;
-    outline:none;
-}
+}   
 
-a {
+a, a:hover {
     text-decoration:none;
     outline:none;
 }
 
-a:active, a:hover {
-    text-decoration:none;
-    color:#000;
-}
+
 
 
 
@@ -91,7 +87,8 @@ h1 {
     margin-left:14px;
 }
 
-a {
+.nav_text {
+    display:block;
     color:#000;
     font-size:16px;
 
