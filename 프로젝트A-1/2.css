@@ -15,88 +15,96 @@ footer, header,
 nav, section {
     margin:0; 
     padding:0; 
-    border: none;
+    border: 0;
     font-size: 100%;
     font: inherit;
+    vertical-align: baseline;
 }
 
-ul, ol, li {
+body {
+    line-height: 1;
+}
+
+ul {
     list-style:none;
-    text-decoration:none;
 }   
 
-a, a:hover {
+a {
     text-decoration:none;
+}
+
+a:active, a:hover {
     outline:none;
 }
 
+/* 최소 너비값 지정 */
 
-
+body{
+    min-width:1080px;
+}
 
 
 /* 헤더 */
 
 .header_box {
     background:black;
-    min-width:1080px;
 }
 
 h1 {
     width:1000px;
     height:120px;
-    
+    margin: 0 auto;
+    line-height: 120px;
     color:#fff;
     font-size:40px;
     font-weight:bold;
-    line-height: 120px;
 }
 
 
 /* 메뉴 */
 
-.container_box {
-    width:1080px;
-    margin:0 auto;
-    /* margin-bottom:40px; */
-    margin-bottom:40px;
-}
 
 .nav_box {
+    width: 1000px;
     margin:0 auto;
-    display: flex;
     padding:40px;
+    display:flex;
 }
 
 .nav_section {
-    height: 33px;
+    width:318px;
+    height:33px;
     border: 1px solid #d1d1d1;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    flex-grow:1;
-    flex-basis:0;
+    line-height:33px;
+    text-align:center;
+
+    
+}
+.nav_section + .nav_section {
+    margin-left:14px;
 }
 
-
-.nav_section:hover{
+.nav_text:hover{
     color: #454545;
     font-weight: bold;
 }
 
-.nav_section + .nav_section {
-    margin-left:14px;
-}
 
 .nav_text {
     display:block;
     color:#000;
     font-size:16px;
-
 }
 
-/* container */
+/* 바디 */
 
-.sub_title {
+.body_box {
+    width:1000px;
+    margin:0 auto;
+}
+
+
+.body_title {
     border-bottom: 1px solid #454545;
     font-size:20px;
     color:#000;
@@ -107,43 +115,30 @@ h1 {
 }
 
 
-/* box model */
-
-
-.body_box {
-    margin:0 auto;
-    width:1000px;
+.content_box {
     margin-top:30px;
-    
-}
-
-.body_box:nth-child(3) {
-    margin-bottom:40px;
 }
 
 
 .content_title {
+    
+    height:46px;
     border:1px solid #d1d1d1;
-    text-indent:15px;
+    background: #f7f7f7;
+    line-height:46px;
     font-size:16px;
     color:#333;
     font-weight:bold;
-    background: #f7f7f7;
-    height:46px;
-    line-height:46px;
-    width:1000px;
+    text-indent:15px;   
 }
 
-.content_box {
-    width:1002px;
+.content_area {
     border:1px solid #d1d1d1;
     width:1000px;
     margin:0 auto;
-    padding:30px;
     font-size:12px;
     color:#000;
-    border-top: none;
-    box-sizing:border-box;
+    
 }
 
 
@@ -158,8 +153,7 @@ h1 {
     text-align: center;
     font-size:12px;
     padding: 20px;
-    min-width:1080px;
-    box-sizing:border-box;
+    margin-top: 40px;
 
 }
 
