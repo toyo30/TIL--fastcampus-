@@ -1,0 +1,53 @@
+변수 유효범위(Variable Scope)
+변수는 사용 가능한 유효범위가 있습니다.
+선언된 블록({}) 내에서만 유효범위를 가집니다.
+
+
+블록 안에서만 사용가능하다. 
+
+
+
+변수 $color는 .box1의 블록 안에서 설정되었기 때문에, 블록 밖의 .box2에서는 사용할 수 없습니다.
+
+.box1 {
+  $color: #111;
+  background: $color;
+}
+// Error
+.box2 {
+  background: $color;
+}
+
+
+
+
+
+
+
+
+
+변수 재 할당(Variable Reassignment)
+다음과 같이 변수에 변수를 할당할 수 있습니다.
+
+@@@@ 다른 변수의 값을 가진 새로운 변수를 다시 또 사용. 할당해서 사옹하는 것. 
+
+
+
+SCSS:
+
+$red: #FF0000;
+$blue: #0000FF;
+
+$color-primary: $blue;
+$color-danger: $red;
+
+.box {
+  color: $color-primary;
+  background: $color-danger;
+}
+Compiled to:
+
+.box {
+  color: #0000FF;
+  background: #FF0000;
+}

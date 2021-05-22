@@ -1,0 +1,87 @@
+!default (초깃값 설정)
+!default 플래그는 할당되지 않은 변수의 초깃값을 설정합니다.
+즉, 할당되어있는 변수가 있다면 변수가 기존 할당 값을 사용합니다.
+
+
+@@@@@ 할당되지 않은 변수에 대해서 쓴다. 
+
+
+
+
+SCSS:
+
+$color-primary: red;
+
+.box {
+  $color-primary: blue !default;       @@@@블루로 정의하고자 하는데, 특정 값이 있다면, 변수에 저장된 값을 쓰겠어. 
+  background: $color-primary;
+}
+Compiled to:
+
+.box {
+  background: red;
+}
+
+
+@@@@@@기존 변수가 있으면 쓰지 않을게요. 라이브러리에서는 사용자가 작성한 코드가 덮여쓰여지지 않기 위해서 만들어짐. 
+
+
+좀 더 유용하게, ‘변수와 값을 설정하겠지만, 혹시 기존 변수가 있을 경우는 현재 설정하는 변수의 값은 사용하지 않겠다’는 의미로 쓸 수 있습니다.
+예를 들어, Bootstrap 같은 외부 Sass(SCSS) 라이브러리를 연결했더니 변수 이름이 같아 내가 작성한 코드의 변수들이 Overwrite(덮어쓰기) 된다면 문제가 있겠죠.
+반대로 내가 만든 Sass(SCSS) 라이브러리가 다른 사용자 코드의 변수들을 Overwrite 한다면, 사용자들은 그 라이브러리를 더 이상 사용하지 않을 것입니다.
+이럴 때 Sass(SCSS) 라이브러리(혹은 새롭게 만든 모듈)에서 사용하는 변수에 !default 플래그가 있다면 기존 코드(원본)를 Overwrite 하지 않고도 사용할 수 있습니다.
+
+// _config.scss
+$color-active: red;
+// main.scss
+@import 'config';
+
+$color-active: blue !default;
+
+.box {
+  background: $color-active;  // red
+}
+다음은 Bootstrap 코드(_variables.scss)의 일부입니다.
+
+
+
+
+// stylelint-disable
+$white:    #fff !default;                -----> 부트스트랩에서는 이 색상으로 적용하고 있지만, 새롭게 정의해주기 위해서. 
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+
+
+
+
+
+
+
+
+#{} (문자 보간)
+#{}를 이용해서 코드의 어디든지 변수 값을 넣을 수 있습니다.
+
+$family: unquote("Droid+Sans");
+@import url("http://fonts.googleapis.com/css?family=#{$family}");
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans");
+
+
+
+Sass의 내장 함수 unquote()는 문자에서 따옴표를 제거합니다.
+
+---> 따옴표를 빼고 출력하겠다는 함수 unquote
+
+
+사이에 특정한 변수가 들어가서 사용될 수 있다. 
+
+
+

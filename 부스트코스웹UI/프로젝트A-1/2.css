@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/* 폰트 */
+
+html {
+    font-family: '나눔 고딕', 'NanumGothic', '돋움', 'Dotum', sans-serif;
+}
+
+
+/* reset */
+
+body, div, h1, h2, h3, p, a,
+address, ul, li, article,
+footer, header,
+nav, section {
+    margin:0; 
+    padding:0; 
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+
+ul {
+    list-style:none;
+}   
+
+a {
+    text-decoration:none;
+}
+
+a:active, a:hover {
+    outline:none;
+}
+
+/* 최소 너비값 지정 */
+
+body{
+    min-width:1080px;
+}
+
+
+/* 헤더 */
+
+.header_box {
+    background: #000;
+}
+
+h1 {
+    width:1000px;
+    height:120px;
+    margin: 0 auto;
+    line-height: 120px;
+    color:#fff;
+    font-size:40px;
+}
+
+
+/* 메뉴 */
+
+
+.nav_box {
+    width: 1000px;
+    margin:0 auto;
+    padding:40px;
+    display:flex;
+}
+
+.nav_section {
+    width:318px;
+    height:33px;
+    border: 1px solid #d1d1d1;
+    line-height:33px;
+}
+
+.nav_section + .nav_section {
+    margin-left:14px;
+}
+
+.nav_text {
+    display:block;
+    color:#000;
+    font-size:16px;
+    text-align:center;
+}
+
+.nav_text:hover{
+    color: #454545;
+    font-weight: bold;
+}
+
+/* 바디 */
+
+.body_box {
+    width:1000px;
+    margin:0 auto;
+}
+
+
+.body_title {
+    font-size:20px;
+    color:#000;
+    width: 1000px;
+    margin:0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #454545;
+}
+
+
+.content_box {
+    margin-top:30px;
+}
+
+
+.content_title {
+    width:1000px;
+    height:46px;
+    border:1px solid #d1d1d1;
+    background: #f7f7f7;
+    line-height:46px;
+    font-size:16px;
+    color:#333;
+    text-indent:15px;   
+    box-sizing:border-box;
+}
+
+.content_area {
+    width:1000px;
+    border:1px solid #d1d1d1;
+    box-sizing:border-box;
+    padding:30px;
+    border-top: 0;
+}
+
+.content_text {
+    font-size: 12px;
+    color: #000;
+}
+
+
+
+
+
+
+/* footer */
+
+.footer {
+    border-top: 1px solid #d1d1d1;
+    text-align: center;
+    font-size:12px;
+    padding: 30px;
+    margin-top: 40px;
+    text-align:center;
+    line-height: 1.5em;
+}
+
+.address_text{
+    color:#999;
+    
+}
+
+.copy_text {
+    color: #000;
+}

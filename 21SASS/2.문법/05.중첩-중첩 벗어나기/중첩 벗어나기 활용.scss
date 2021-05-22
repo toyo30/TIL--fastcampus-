@@ -1,0 +1,43 @@
+.section {
+    $width:100px;
+    $height:200px;
+    width: $width;
+    height: $height;
+    .item {
+        width:$width;
+        height: $height;
+    }
+    @at-root.box {
+    width: $width;
+    height: $height;
+    }
+}
+
+
+// .box {
+//     width: $width;
+//     height: $height;
+// }
+
+
+/*사용이 안  됨 */ 
+
+
+/*변환된 css */
+
+.section {
+  width: 100px;
+  height: 200px;
+}
+
+.section .item {
+  width: 100px;
+  height: 200px;
+}
+
+.box {
+  width: 100px;
+  height: 200px;
+}
+
+/*사용이 안  됨 */

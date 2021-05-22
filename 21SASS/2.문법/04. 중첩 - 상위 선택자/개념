@@ -1,0 +1,55 @@
+Ampersand (상위 선택자 참조)
+중첩 안에서 & 키워드는 상위(부모) 선택자를 참조하여 치환합니다.
+
+
+@@@@@@@ &로 치환가능함. &를 엠퍼센드라고 부름. 
+
+
+
+SCSS:
+
+.btn {
+  position: absolute;
+  &.active {
+    color: red;
+  }
+}
+
+.list {
+  li {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+Compiled to:
+
+.btn {
+  position: absolute;
+}
+.btn.active {
+  color: red;
+}
+.list li:last-child {
+  margin-right: 0;
+}
+& 키워드가 참조한 상위 선택자로 치환되는 것이기 때문에 다음과 같이 응용할 수도 있습니다.
+
+SCSS:
+
+.fs {
+  &-small { font-size: 12px; }
+  &-medium { font-size: 14px; }
+  &-large { font-size: 16px; }
+}
+Compiled to:
+
+.fs-small {
+  font-size: 12px;
+}
+.fs-medium {
+  font-size: 14px;
+}
+.fs-large {
+  font-size: 16px;
+}

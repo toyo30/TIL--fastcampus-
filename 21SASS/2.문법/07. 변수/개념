@@ -1,0 +1,26 @@
+변수(Variables)
+반복적으로 사용되는 값을 변수로 지정할 수 있습니다.
+변수 이름 앞에는 항상 $를 붙입니다.
+
+특정한 값을 반복적으로 사용하기 위해서 중복된 값을 $과 같이 활용하는 것. ㄴ
+
+
+$변수이름: 속성값;
+SCSS:
+
+$color-primary: #e96900;
+$url-images: "/assets/images/";
+$w: 200px;
+
+.box {
+  width: $w;
+  margin-left: $w;
+  background: $color-primary url($url-images + "bg.jpg");
+}
+Compiled to:
+
+.box {
+  width: 200px;
+  margin-left: 200px;
+  background: #e96900 url("/assets/images/bg.jpg");
+}
