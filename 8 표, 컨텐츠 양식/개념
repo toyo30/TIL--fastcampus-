@@ -1,0 +1,59 @@
+표 콘텐츠
+<table>
+  <caption>Fruits</caption>
+  <colgroup>
+    <col span="2" style="background-color: yellowgreen;">
+    <col style="background-color: tomato;">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F123A</td>
+      <td>Apple</td>
+      <td>$22</td>
+    </tr>
+    <tr>
+      <td>F098B</td>
+      <td>Banana</td>
+      <td>$19</td>
+    </tr>
+  </tbody>
+</table>
+<table>, <tr>, <th>, <td>
+데이터 표(<table>)의 행(줄 / <tr>)과 열(칸, 셀(Cell) / <th>, <td>)을 생성.
+(Table Row, Table Header, Table Data)
+
+table { display: table; }
+tr { display: table-row; }
+th, td { display: table-cell; }
+TABLE: MDN / W3Schools
+TR: MDN / W3Schools
+TH: MDN / W3Schools
+TD: MDN / W3Schools
+
+<th>
+‘머리글 칸’을 지정
+
+속성	의미	값	기본값
+abbr	열에 대한 간단한 설명		
+headers	관련된 하나 이상의 다른 머리글 칸 id 속성 값		
+colspan	확장하려는(병합) 열의 수		1
+rowspan	확장하려는(병합) 행의 수		1
+scope	자신이 누구의 ‘머리글 칸’인지 명시	col: 자신의 열
+colgroup: 모든 열
+row: 자신의 행
+rowgroup: 모든 행
+auto	auto
+<td>
+‘일반 칸’을 지정
+
+속성	의미	값	기본값
+headers	관련된 하나 이상의 다른 머리글 칸 id 속성 값		
+colspan	확장하려는(병합) 열의 수		1
+rowspan	확장하려는(병합) 행의 수		1
