@@ -1,0 +1,43 @@
+<form action="sumit">
+   <fieldset>
+      
+  <select>
+  <optgroup label="과일">
+    <option value="apple">apple</option>
+    <option value="apple">apple</option>
+    <option value="apple">apple</option>
+    <option value="apple">apple</option>
+  </optgroup>
+    <optgroup label="과일">
+    <option value="apple">apple</option>
+    <option value="apple">apple</option>
+    <option value="apple">apple</option>
+    <option value="apple">apple</option>
+  </optgroup>
+    
+   
+    <input type="email" id="id">
+    <label for="id">안녕</label>
+      
+      
+    </fieldset>
+    
+</form>
+  
+  <form>
+  <fieldset>
+    <legend>Coffee Size</legend>
+    <label>
+        <input type="radio" name="size" value="tall" />
+        Tall
+    </label>
+    <label>
+        <input type="radio" name="size" value="grande" />
+        Grande
+    </label>
+    <label>
+        <input type="radio" name="size" value="venti" />
+        Venti
+    </label>
+  </fieldset>
+</form>
