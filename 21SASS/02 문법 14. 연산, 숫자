@@ -1,0 +1,19 @@
+<style>
+
+.apple {
+  border:1px solid;
+  width: 100px;
+  height: 100px;
+}
+
+.apple1 {
+  border:1px solid;
+  width: calc(100%-20px);
+  height: 100px;
+}
+
+</style>
+
+<div class="apple"></div>
+
+<div class="apple1"></div>
