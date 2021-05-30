@@ -1,0 +1,7 @@
+$w: 100px;
+.item {
+    display:block;
+    @if($w > 90px or $w <150px ) {
+        width:400px;
+    }
+}
