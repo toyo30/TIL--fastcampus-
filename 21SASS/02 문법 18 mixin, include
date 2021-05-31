@@ -1,0 +1,20 @@
+@mixin size ($w: 100px, $h:100px) {
+    width: $w;
+    height: $h;
+}
+
+.box {
+    @include size;
+}
+
+.box1 {
+    @include size();
+}
+
+.box3 {
+    @include size($h:200px);
+}
+
+.box4 {
+    @include size(100px 100px);
+}
