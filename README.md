@@ -1,2 +1,2 @@
-# fastcampus
-네카라쿠베
+# TIL (fastcampus)
+html, css 문법정리
